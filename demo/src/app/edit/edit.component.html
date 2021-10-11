@@ -1,0 +1,16 @@
+<form (ngSubmit)="edit()" #f="ngForm">
+    <!-- <div class="form-group">
+        <label>Id</label>
+        <input type="text" class="form-control">
+    </div> -->
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" [(ngModel)]="employee.name" name="name">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" [(ngModel)]="employee.email" name="email">
+    </div>
+    <button>Edit</button>
+</form>
+

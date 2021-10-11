@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <button routerLink="/add">Add</button>    
+    <div class="row">
+    <div class="col-md-3" *ngFor="let e of employee">
+    <div class="card">
+    <div class="heading">{{e.name}}</div>
+    <div class="sub-heading">{{e.email}}</div>
+    <button routerLink="/edit/{{e.id}}">Edit</button>
+    <button (click)="delete(e.id)">Delete</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
